@@ -8,7 +8,92 @@
 </head>
 
 <body>
-    <h1>Login</h1>
+
+    <a href="index.html" class="voltar">BACK</a>
+
+    <div class="centered-horizontal">
+        <h1>Login</h1>
+
+        <div class="register-form">
+            <form>
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
+
+<style>
+    .voltar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        margin: 2rem;
+        text-decoration: none;
+        background-color: beige;
+        padding: 16px 32px;
+        color: black;
+    }
+
+    :root {
+        font-family: Arial, sans-serif;
+    }
+
+    .centered-horizontal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15rem;
+        flex-direction: column;
+    }
+
+
+    .register-form {
+        border: 1px solid black;
+        background-color: beige;
+
+        min-width: 30rem;
+
+    }
+
+    .centered-horizontal input {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    input {
+        width: 80%;
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        min-width: 200px;
+        margin-top: 1rem;
+
+    }
+
+    .centered-horizontal h1 {
+        margin-right: 23rem;
+    }
+</style>
