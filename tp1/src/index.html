@@ -8,25 +8,78 @@
 </head>
 
 <body>
-    <h1>OLA</h1>
 
-    <button onclick="print()">CLICA AUQI PARA MAIS RAM</button>
+    <div class="centered-horizontal">
+        <!-- <img src=" https://i.imgur.com/Y1PKdrkl.jpg" alt="kanye west" /> -->
+        <img src="https://preview.redd.it/bkdhj6292qmc1.jpeg?auto=webp&s=eebb26973844b94a4f3d7bf761b92e8042fcd223"
+            alt="kanye west" />
+    </div>
 
-    <a href="login.html">login</a>
+
+    <div class="centered-horizontal">
+        <h2>Projeto Nº.1</h2>
+    </div>
+
+    <div class="centered-horizontal buttons">
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </div>
+
+    <div class="centered-horizontal">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="forgot">
+            Forgot your password?
+        </a>
+    </div>
+
+    <footer>
+        <p>© 2024 - Trabalho 1 PW</p>
+    </footer>
 </body>
 
 </html>
 
-
-
-<script>
-    function print() {
-        console.log("RAM");
-    }
-</script>
-
 <style>
-    button {
+    .forgot {
+        margin-top: 0.5rem;
+    }
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #f1f1f1;
+        color: black;
+        text-align: center;
+    }
+
+    .centered-horizontal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .centered-horizontal img {
+        padding-top: 5rem;
+    }
+
+    .centered-horizontal h2 {
+        font-weight: 900;
+        font-size: 3rem;
+    }
+
+
+    :root {
+        font-family: 'Arial', sans-serif;
+    }
+
+    .buttons a {
         background-color: #4CAF50;
         /* Green */
         border: none;
@@ -36,7 +89,13 @@
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
-
         cursor: pointer;
+        min-width: 200px;
+        margin-top: 1rem;
+    }
+
+    img {
+        width: 300px;
+        height: 300px;
     }
 </style>
