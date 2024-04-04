@@ -27,6 +27,25 @@
       </div>
     </dialog>
 
+    <dialog id="editDialog">
+      <img src="../assets/x-close.svg" alt="Close" id="closeButton" />
+      <h1>Editar Tarefa</h1>
+      <h2>Descrição</h2>
+      <textarea
+        name="description"
+        id="description"
+        cols="30"
+        rows="10"
+        placeholder="Descrição da tarefa"
+      ></textarea>
+      <h2>Data de Início</h2>
+      <input type="date" name="startDate" id="startDate" />
+
+      <div class="centered-horizontal">
+        <button id="addButton">Adicionar</button>
+      </div>
+    </dialog>
+
     <div class="top-buttons">
       <a href="profile.html">Gerir Perfil</a>
       <a href="index.html">Terminar Sessão</a>
@@ -54,6 +73,7 @@
           <th>Data de Início</th>
           <th>Data de Fim</th>
           <th>Estado</th>
+          <th>Editar</th>
         </tr>
         <tr>
           <td>Comprar pão</td>
@@ -61,6 +81,12 @@
           <td>2024-03-01</td>
           <td>2024-03-01</td>
           <td>Por fazer</td>
+          <td class="center-edit">
+            <img
+              src="https://www.svgrepo.com/show/36160/edit-button.svg"
+              alt="Edit"
+            />
+          </td>
         </tr>
         <tr>
           <td>Estudar</td>
@@ -68,6 +94,12 @@
           <td>2024-03-01</td>
           <td>2024-03-01</td>
           <td>Por fazer</td>
+          <td class="center-edit">
+            <img
+              src="https://www.svgrepo.com/show/36160/edit-button.svg"
+              alt="Edit"
+            />
+          </td>
         </tr>
         <tr>
           <td>Ir ao ginásio</td>
@@ -75,6 +107,12 @@
           <td>2024-03-01</td>
           <td>2024-03-01</td>
           <td>Por fazer</td>
+          <td class="center-edit">
+            <img
+              src="https://www.svgrepo.com/show/36160/edit-button.svg"
+              alt="Edit"
+            />
+          </td>
         </tr>
       </table>
     </div>
@@ -90,6 +128,9 @@
   const addButton = document.getElementById("addButton");
   const closeButton = document.getElementById("closeButton");
   const dialog = document.getElementById("dialog");
+  const editDialog = document.getElementById("editDialog");
+
+  const editButtons = document.querySelectorAll(".center-edit");
 
   dialogButton.addEventListener("click", () => {
     dialog.showModal();
@@ -101,5 +142,11 @@
 
   addButton.addEventListener("click", () => {
     dialog.close();
+  });
+
+  editButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      editDialog.showModal();
+    });
   });
 </script>

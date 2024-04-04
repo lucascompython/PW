@@ -261,3 +261,15 @@ dialog button {
   margin-top: 1rem;
   border-radius: 0.5rem;
 }
+
+td img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.center-edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
