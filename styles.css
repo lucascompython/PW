@@ -1,0 +1,275 @@
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  color: black;
+  text-align: center;
+}
+
+.centered-horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.margin-top {
+  flex-direction: column;
+  margin-top: 10rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.centered-horizontal img {
+  padding-top: 5rem;
+}
+
+.centered-horizontal h2 {
+  font-weight: 900;
+  font-size: 3rem;
+}
+.centered-horizontal input {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+:root {
+  font-family: "Arial", sans-serif;
+}
+
+.buttons a {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  min-width: 200px;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+}
+
+.buttons a:hover {
+  background-color: #45a049;
+}
+.forgot {
+  margin-top: 1rem;
+}
+.voltar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  text-decoration: none;
+  background-color: beige;
+  padding: 16px 32px;
+  color: black;
+  border-radius: 0.5rem;
+}
+.voltar:hover {
+  background-color: #f2f2f2;
+}
+.form-wrapper {
+  border: 1px solid black;
+  background-color: beige;
+  width: 100%;
+  min-width: 365px;
+  max-width: 500px;
+  border-radius: 0.5rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  width: 80%;
+  min-width: 200px;
+  max-width: 300px;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+
+.submit {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  min-width: 200px;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 10px;
+}
+
+.submit {
+  background-color: #45a049;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: -5rem;
+  position: relative;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.centered-horizontal h1 {
+  margin-right: 14rem;
+}
+
+.pfp {
+  width: 200px;
+  height: 200px;
+}
+
+.pfp-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 6rem;
+  margin-left: 5rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  max-width: fit-content;
+  padding: 32px;
+}
+
+.pfp-wrapper h1 {
+  margin-left: 2rem;
+}
+
+.top-buttons {
+  position: absolute;
+  display: flex;
+  right: -10px;
+  top: 0px;
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
+.top-buttons a {
+  background-color: #45a049;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  min-width: 200px;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+.tarefas {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+.tarefas h1 {
+  margin-left: 15rem;
+}
+
+.tarefas table {
+  margin-inline: 2rem;
+
+  /* colors */
+  background-color: #f1f1f1;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+.table-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-top button {
+  background-color: #45a049;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  margin-right: 2rem;
+}
+
+#closeButton {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+dialog {
+  min-width: 300px;
+}
+textarea {
+  width: 100%;
+  min-width: 300px;
+  max-width: 300px;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+
+input[type="date"] {
+  width: 100%;
+  min-width: 200px;
+  max-width: 300px;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+
+dialog button {
+  background-color: #45a049;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+
+td img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.center-edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

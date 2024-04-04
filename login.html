@@ -1,134 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-
+  <body>
     <a href="index.html" class="voltar">BACK</a>
 
-    <div class="centered-horizontal">
-        <h1>Login</h1>
+    <div class="centered-horizontal margin-top">
+      <h1>Login</h1>
 
-        <div class="register-form">
-            <form>
-                <input type="text" name="username" placeholder="Username" required>
-                <input type="password" name="password" placeholder="Password" required>
-                <input type="submit" value="Login">
-            </form>
-        </div>
-        <a href="forgot.html" class="forgot">
-            Forgot your password?
-        </a>
-
+      <div class="form-wrapper">
+        <form onsubmit="redirect()">
+          <input type="text" name="username" placeholder="Username" required />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <a href="tasks.html" class="submit">Login</a>
+        </form>
+      </div>
+      <a href="forgot.html" class="forgot"> Forgot your password? </a>
     </div>
 
     <footer>
-        <p>© 2024 - Project 1 PW</p>
+      <p>© 2024 - Project 1 PW</p>
     </footer>
-
-</body>
-
+  </body>
 </html>
-
-<style>
-    .forgot {
-        margin-top: 1rem;
-    }
-
-
-    footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: #f1f1f1;
-        color: black;
-        text-align: center;
-    }
-
-
-    .voltar {
-        position: fixed;
-        left: 0;
-        top: 0;
-        margin: 2rem;
-        text-decoration: none;
-        background-color: beige;
-        padding: 16px 32px;
-        color: black;
-        border-radius: 0.5rem;
-    }
-
-
-    .voltar:hover {
-        background-color: #f2f2f2;
-    }
-
-
-    :root {
-        font-family: Arial, sans-serif;
-    }
-
-    .centered-horizontal {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 15rem;
-        flex-direction: column;
-    }
-
-    .register-form {
-        border: 1px solid black;
-        background-color: beige;
-        width: 100%;
-        min-width: 365px;
-        max-width: 500px;
-        border-radius: 0.5rem;
-    }
-
-    .centered-horizontal input {
-        margin: 1rem;
-        padding: 1rem;
-    }
-
-
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-    input {
-        width: 800%;
-        min-width: 200px;
-        max-width: 300px;
-        border: 1px solid black;
-        border-radius: 0.5rem;
-    }
-
-    input[type="submit"] {
-        background-color: #4CAF50;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        cursor: pointer;
-        min-width: 200px;
-        margin-top: 1rem;
-
-    }
-
-
-    input[type="submit"]:hover {
-        background-color: #45a049;
-    }
-</style>

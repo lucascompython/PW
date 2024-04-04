@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarefas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="index.html" class="voltar">BACK</a>
+    <dialog id="dialog">
+      <img src="./assets/x-close.svg" alt="Close" id="closeButton" />
+      <h1>Nova Tarefa</h1>
+      <h2>Descrição</h2>
+      <textarea
+        name="description"
+        id="description"
+        cols="30"
+        rows="10"
+        placeholder="Descrição da tarefa"
+      ></textarea>
+      <h2>Data de Início</h2>
+      <input type="date" name="startDate" id="startDate" />
+
+      <div class="centered-horizontal">
+        <button id="addButton">Adicionar</button>
+      </div>
+    </dialog>
+
+    <dialog id="editDialog">
+      <img src="./assets/x-close.svg" alt="Close" id="closeButton" />
+      <h1>Editar Tarefa</h1>
+      <h2>Descrição</h2>
+      <textarea
+        name="description"
+        id="description"
+        cols="30"
+        rows="10"
+        placeholder="Descrição da tarefa"
+      ></textarea>
+      <h2>Data de Início</h2>
+      <input type="date" name="startDate" id="startDate" />
+
+      <div class="centered-horizontal">
+        <button id="addButton">Adicionar</button>
+      </div>
+    </dialog>
+
+    <div class="top-buttons">
+      <a href="profile.html">Gerir Perfil</a>
+      <a href="index.html">Terminar Sessão</a>
+    </div>
+
+    <div class="pfp-wrapper">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/2048px-Default_pfp.svg.png"
+        alt="Profile Picture"
+        class="pfp"
+      />
+      <h1>Olá Lucas</h1>
+    </div>
+
+    <div class="tarefas">
+      <div class="table-top">
+        <h1>As minhas tarefas</h1>
+        <button id="dialogButton">Nova Tarefa</button>
+      </div>
+
+      <table>
+        <tr>
+          <th>Nome</th>
+          <th>Descrição</th>
+          <th>Data de Início</th>
+          <th>Data de Fim</th>
+          <th>Estado</th>
+          <th>Editar</th>
+        </tr>
+        <tr>
+          <td>Comprar pão</td>
+          <td>Ir à padaria comprar pão</td>
+          <td>2024-03-01</td>
+          <td>2024-03-01</td>
+          <td>Por fazer</td>
+          <td class="center-edit">
+            <img
+              src="https://www.svgrepo.com/show/36160/edit-button.svg"
+              alt="Edit"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Estudar</td>
+          <td>Estudar para o teste de PW</td>
+          <td>2024-03-01</td>
+          <td>2024-03-01</td>
+          <td>Por fazer</td>
+          <td class="center-edit">
+            <img
+              src="https://www.svgrepo.com/show/36160/edit-button.svg"
+              alt="Edit"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Ir ao ginásio</td>
+          <td>Ir ao ginásio fazer exercício</td>
+          <td>2024-03-01</td>
+          <td>2024-03-01</td>
+          <td>Por fazer</td>
+          <td class="center-edit">
+            <img
+              src="https://www.svgrepo.com/show/36160/edit-button.svg"
+              alt="Edit"
+            />
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <footer>
+      <p>© 2024 - Project 1 PW</p>
+    </footer>
+  </body>
+</html>
+
+<script>
+  const dialogButton = document.getElementById("dialogButton");
+  const addButton = document.getElementById("addButton");
+  const closeButton = document.getElementById("closeButton");
+  const dialog = document.getElementById("dialog");
+  const editDialog = document.getElementById("editDialog");
+
+  const editButtons = document.querySelectorAll(".center-edit");
+
+  dialogButton.addEventListener("click", () => {
+    dialog.showModal();
+  });
+
+  closeButton.addEventListener("click", () => {
+    dialog.close();
+  });
+
+  addButton.addEventListener("click", () => {
+    dialog.close();
+  });
+
+  editButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      editDialog.showModal();
+    });
+  });
+</script>
