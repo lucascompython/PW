@@ -136,3 +136,127 @@ input[type="checkbox"] {
 .centered-horizontal h1 {
   margin-right: 14rem;
 }
+
+.pfp {
+  width: 200px;
+  height: 200px;
+}
+
+.pfp-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  max-width: fit-content;
+  padding: 32px;
+}
+
+.pfp-wrapper h1 {
+  margin-left: 2rem;
+}
+
+.top-buttons {
+  position: absolute;
+  display: flex;
+  right: -10px;
+  top: 0px;
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
+.top-buttons button {
+  background-color: #45a049;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  min-width: 200px;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+.tarefas {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+.tarefas h1 {
+  margin-left: 15rem;
+}
+
+.tarefas table {
+  margin-inline: 2rem;
+
+  /* colors */
+  background-color: #f1f1f1;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+.table-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-top button {
+  background-color: #45a049;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  margin-right: 2rem;
+}
+
+#closeButton {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+dialog {
+  min-width: 300px;
+}
+textarea {
+  width: 100%;
+  min-width: 300px;
+  max-width: 300px;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+
+input[type="date"] {
+  width: 100%;
+  min-width: 200px;
+  max-width: 300px;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+
+dialog button {
+  background-color: #45a049;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
