@@ -1,0 +1,133 @@
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  color: black;
+  text-align: center;
+}
+
+.centered-horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.margin-top {
+  flex-direction: column;
+  margin-top: 10rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.centered-horizontal img {
+  padding-top: 5rem;
+}
+
+.centered-horizontal h2 {
+  font-weight: 900;
+  font-size: 3rem;
+}
+.centered-horizontal input {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+:root {
+  font-family: "Arial", sans-serif;
+}
+
+.buttons a {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  min-width: 200px;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+}
+
+.buttons a:hover {
+  background-color: #45a049;
+}
+.forgot {
+  margin-top: 1rem;
+}
+.voltar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 2rem;
+  text-decoration: none;
+  background-color: beige;
+  padding: 16px 32px;
+  color: black;
+  border-radius: 0.5rem;
+}
+.voltar:hover {
+  background-color: #f2f2f2;
+}
+.form {
+  border: 1px solid black;
+  background-color: beige;
+  width: 100%;
+  min-width: 365px;
+  max-width: 500px;
+  border-radius: 0.5rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  width: 80%;
+  min-width: 200px;
+  max-width: 300px;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+input[type="submit"] {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  min-width: 200px;
+  margin-top: 1rem;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: -5rem;
+  position: relative;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.centered-horizontal h1 {
+  margin-right: 14rem;
+}
